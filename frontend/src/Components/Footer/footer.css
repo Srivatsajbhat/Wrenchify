@@ -52,17 +52,6 @@ footer {
   font-size: clamp(1.5rem, 2.3vw, 2.25rem);
 }
 
-.input-box {
-  display: flex;
-  max-width: 100%;
-  padding-block: 1rem;
-  border-bottom: 1px solid black;
-  margin-top: 3rem;
-}
-.input-box > input {
-  flex-grow: 1;
-}
-
 .footer-nav {
   display: flex;
   flex-wrap: wrap;

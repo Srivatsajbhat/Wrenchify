@@ -1,7 +1,6 @@
 import React from 'react'
 import './header.css'
 import { RiMenu4Fill } from "react-icons/ri";
-import { FaUserCircle } from "react-icons/fa";
 
 function Header() {
   return (
@@ -18,7 +17,7 @@ function Header() {
             <li><a href="/contact">Contact</a></li>
             <li><a href="/service">Services</a></li>
             <li><a href="/subscription">Subscription</a></li>
-            <li><a href="/profile"><FaUserCircle /></a></li>
+            <li><a href="/profile"></a></li>
           </ul>
         </div>
       </nav>

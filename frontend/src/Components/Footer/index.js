@@ -11,29 +11,21 @@ function Footer() {
                         <h2>
                             WrenchiFy® 
                         </h2>
-                        {/* <div class="input-box">
-                            <input type="email" placeholder="Email Address" />
-                            <button>
-                                <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001" stroke="#0E100F"></path>
-                                </svg>
-                            </button>
-                        </div> */}
                     </div>
                     <nav class="footer-nav">
                         <div>
                             <h3>Company</h3>
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/service">Services</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                             </ul>
                         </div>
                         <div>
                             <h3>WrenchiFy</h3>
                             <ul>
                                 <li><a href="#">Community</a></li>
-                                <li><a href="#">Subscriptions</a></li>
+                                <li><a href="/subscription">Subscriptions</a></li>
                             </ul>
                         </div>
                         <div>
