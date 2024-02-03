@@ -138,26 +138,91 @@ function Home() {
       </div>
       <div className='service'>
         <h1 className='serv-head'>Services</h1>
-      </div>
-      <div className='card_container container'>
-        <div className='card' >
-          <h3>Regular</h3>
-          <h4>
-            For routine maintenance needs, our platform connects you with nearby garages offering comprehensive services to keep your
-            vehicle running smoothly. From oil changes to brake inspections, our network of trusted providers ensures your vehicle receives
-            top-notch care to maintain optimal performance and reliability.
-          </h4>
+        <div className='card_container container'>
+          <div className='card' >
+            <h3>Regular</h3>
+            <h4>
+              For routine maintenance needs, our platform connects you with nearby garages offering comprehensive services to keep your
+              vehicle running smoothly. From oil changes to brake inspections, our network of trusted providers ensures your vehicle receives
+              top-notch care to maintain optimal performance and reliability.
+            </h4>
+          </div>
+          <div className='card' >
+            <h3>Emergency</h3>
+            <h4>
+              Access immediate assistance with our emergency services,
+              linking you to nearby garages for urgent automotive help whenever required.
+              Our reliable network ensures prompt response and expert solutions for various emergencies,
+              ensuring your safety and swift return to the road.
+              Get immediate help with our emergency services, connecting you to nearby garages for urgent automotive assistance whenever
+              you need it.
+            </h4>
+          </div>
         </div>
-        <div className='card' >
-          <h3>Emergency</h3>
-          <h4>
-            Access immediate assistance with our emergency services,
-            linking you to nearby garages for urgent automotive help whenever required.
-            Our reliable network ensures prompt response and expert solutions for various emergencies,
-            ensuring your safety and swift return to the road.
-            Get immediate help with our emergency services, connecting you to nearby garages for urgent automotive assistance whenever
-            you need it. 
-          </h4>
+      </div>
+      <div className='uses'>
+        <h1 className='use-head'>Steps To Use</h1>
+        <div className='use-container container'>
+          <div className='use-card'>
+            <h4>
+              Initiate your garage search by clicking on the Explore Button.
+            </h4>
+          </div>
+          <div className='use-card'>
+            <h4>
+              Specify the type the type of service you require : Emergency or Regular Maintainence.
+            </h4>
+          </div>
+          <div className='use-card'>
+            <h4>
+              Input your location and preffered radius to find nearby service providers.
+            </h4>
+          </div>
+          <div className='use-card'>
+            <h4>
+              Indicate the type of vehicle you own for tailored service reccomendation.
+            </h4>
+          </div>
+          <div className='use-card'>
+            <h4>
+              Alert nearby garages about your Emergencies or book services from the displayed options
+            </h4>
+          </div>
+          <div className='use-card'>
+            <h4>
+              Contact the garages directly or allow them to reach out.
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div className='subscription'>
+        <h1 className='sub-head'>Subscribscription  Plans</h1>
+        <h3>Our subscription plans are designed to fit all types of users, whether you are a vehicle owner or a garage owner. Choose the plan that best suits your needs and enjoy the benefits of our platform.</h3>
+        <div className='sub-container container'>
+          <div class="container">
+            <div class="card_box">
+              <span>
+                <h3 className='plan-head'>Normal</h3>
+                <h4></h4>
+              </span>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card_box">
+              <span>
+              <h3 className='plan-head'>Modrate</h3>
+                <h4></h4>
+              </span>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card_box">
+              <span>
+              <h3 className='plan-head'>Pro</h3>
+                <h4></h4>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
