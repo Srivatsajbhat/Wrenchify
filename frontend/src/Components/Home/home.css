@@ -1,0 +1,131 @@
+.home {
+    background: linear-gradient(to right, #2c67f2, #62cff4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-text {
+    position: relative;
+    top: 30%;
+    margin-left: 40px;
+    color: white;
+    font-size: 3rem;
+
+}
+
+.head {
+    font-weight: 700;
+    color: yellow;
+}
+
+.head-1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.Explore-Button {
+    width: fit-content;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(120deg, rgb(65, 43, 95), rgb(96, 51, 154));
+    margin-top: 50px;
+}
+
+.IconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+.telescope {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    transition: all 1s;
+    transform: rotate(20deg);
+}
+
+.tripod {
+    width: 60%;
+    height: auto;
+}
+
+.text {
+    color: rgb(240, 240, 240);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.Explore-Button:hover .telescope {
+    transform: rotate(-35deg);
+}
+
+.Explore-Button:hover {
+    background: linear-gradient(120deg, rgb(96, 51, 154), rgb(65, 43, 95));
+}
+
+.service {
+    padding-block: 3rem 5rem;
+}
+
+.serv-head{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card_container {
+    color: var(--clr-primary-black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_container .card {
+    border-radius: 20px;
+    background: var(--clr-primary-white);
+    box-shadow: 8px 0 30px 40px rgba(4, 4, 4, 0.10);
+    max-width: 90%;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 3.25rem 3rem 3.25rem;
+}
+
+.card_container .card {
+    width: 32%;
+    margin-bottom: 1.25rem;  
+}
+
+.card_container .card h3 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card_container .card h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}

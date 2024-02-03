@@ -2,17 +2,13 @@
 
 .footer-body {
   font-family: "Gothic A1", sans-serif;
-  height: 100vh;
   width: 100vw;
-  color: #0e100f;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 footer {
   width: 100%;
-  background-color: #0c081c;
+  background: linear-gradient(to right, #62cff4, #2c67f2);
   color: white;
 }
 
