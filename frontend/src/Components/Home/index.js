@@ -1,5 +1,7 @@
 import React from 'react'
 import './home.css'
+import Subsciption from '../Subscription'
+import about from '../../Images/about.jpeg'
 
 function Home() {
   return (
@@ -195,35 +197,22 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className='subscription'>
-        <h1 className='sub-head'>Subscribscription  Plans</h1>
-        <h3>Our subscription plans are designed to fit all types of users, whether you are a vehicle owner or a garage owner. Choose the plan that best suits your needs and enjoy the benefits of our platform.</h3>
-        <div className='sub-container container'>
-          <div class="container">
-            <div class="card_box">
-              <span>
-                <h3 className='plan-head'>Normal</h3>
-                <h4></h4>
-              </span>
-            </div>
-          </div>
-          <div class="container">
-            <div class="card_box">
-              <span>
-              <h3 className='plan-head'>Modrate</h3>
-                <h4></h4>
-              </span>
-            </div>
-          </div>
-          <div class="container">
-            <div class="card_box">
-              <span>
-              <h3 className='plan-head'>Pro</h3>
-                <h4></h4>
-              </span>
-            </div>
-          </div>
+      <div>
+        <Subsciption />
+      </div>
+      <div className='about'>
+        <h1 className='about-head'>About Us</h1>
+        <div  className='about-wrapper'>
+          <div>
+          <img src={about} alt=" " className="about-img" />
         </div>
+        <div className='about-para'>
+          <h4>
+            Wrenchify is a Platform that connects people who need automotive services with trusted mechanics in their area. Our user-friendly platform allows users to browse mechanic profiles, request quotes, and communicate directly with mechanics. We prioritize transparency and trust by encouraging honest reviews of mechanic services. Our mechanics are highly skilled and undergo a rigorous screening process to ensure top-notch service. We are committed to providing a reliable, hassle-free experience for our users.
+          </h4>
+        </div>
+        </div>
+        <a href='/about'><strong>More &rarr;</strong></a>
       </div>
     </div>
   )

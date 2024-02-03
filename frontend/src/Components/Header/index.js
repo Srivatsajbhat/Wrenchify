@@ -8,7 +8,7 @@ function Header() {
     <div className='body'>
     <div class="wrapper">
       <nav className='header-nav'>
-        <a href="#" class="logo">WrenchiFy</a>
+        <a href="/" class="logo">WrenchiFy</a>
         <input type="checkbox" name="" id="toggle"/>
         <label for="toggle"><i class="material-icons"><RiMenu4Fill /></i></label>
         <div class="menu">

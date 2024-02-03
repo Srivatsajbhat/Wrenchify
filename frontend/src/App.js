@@ -18,7 +18,7 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/service' element={<Serv />}></Route>
-        <Route path='/subscription' element={<Subscription />}></Route>
+        <Route path='/subscription' element={<Subscription/> }></Route>
       </Routes>
       <Footer />
     </Router>
