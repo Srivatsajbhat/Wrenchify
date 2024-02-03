@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import Subsciption from '../Subscription'
 import about from '../../Images/about.jpeg'
+import home from '../../Images/home.png'
 
 function Home() {
   return (
@@ -134,7 +135,7 @@ function Home() {
 
         </div>
         <div className='home-img'>
-
+          <img src={home} alt="home" />
         </div>
 
       </div>
