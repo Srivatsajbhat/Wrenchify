@@ -1,0 +1,128 @@
+.search-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 68px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3C3C3C;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 62px;
+    width: 62px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #0E6EB8;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(133px);
+    -ms-transform: translateX(133px);
+    transform: translateX(172px);
+}
+
+
+.slider:after {
+    content: 'NORMAL';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+input:checked+.slider:after {
+    content: 'EMERGENCY';
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 0;
+    
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    height: 50px;
+    width: 350px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+
+.button--submit {
+    min-height: 37px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+    background-color: #5e5dcd;
+}
+
+.input:focus,
+.input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+}

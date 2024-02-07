@@ -8,6 +8,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Serv from './Components/Serv';
 import Subscription from './Components/Subscription';
+import Search from './Components/Search';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
+        <Route path='/search' element={<Search />}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/service' element={<Serv />}></Route>
