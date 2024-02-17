@@ -3,6 +3,8 @@ import './home.css'
 import Subsciption from '../Subscription'
 import about from '../../Images/about.jpeg'
 import home from '../../Images/home.png'
+import services from '../../Images/services.jpeg'
+import use from '../../Images/use.png'
 
 function Home() {
   return (
@@ -143,6 +145,9 @@ function Home() {
       <div className='service'>
         <h1 className='serv-head'>Services</h1>
         <div className='card_container container'>
+          <div className='serv-img'>
+            <img src={services} alt="home" />
+          </div>
           <div className='card' >
             <h3>Regular</h3>
             <h4>
@@ -162,40 +167,25 @@ function Home() {
               you need it.
             </h4>
           </div>
+
         </div>
       </div>
       <div className='uses'>
         <h1 className='use-head'>Steps To Use</h1>
         <div className='use-container container'>
-          <div className='use-card'>
-            <h4>
-              Initiate your garage search by clicking on the Explore Button.
-            </h4>
+          <div className='use-list'>
+          <ul>
+                <li><h3>1. Initiate your garage search by clicking on the Explore Button.</h3></li>
+                <li><h3>2. Specify the type the type of service you require : Emergency or Regular Maintainence.</h3></li>
+                <li><h3>3. Input your location and preffered radius to find nearby service providers.</h3></li>
+                <li><h3>4. Indicate the type of vehicle you own for tailored service reccomendation.</h3></li>
+                <li><h3>5. Alert nearby garages about your Emergencies or book services from the displayed options.</h3></li>
+                <li><h3>6. Contact the garages directly or allow them to reach out.</h3></li>
+
+          </ul>
           </div>
-          <div className='use-card'>
-            <h4>
-              Specify the type the type of service you require : Emergency or Regular Maintainence.
-            </h4>
-          </div>
-          <div className='use-card'>
-            <h4>
-              Input your location and preffered radius to find nearby service providers.
-            </h4>
-          </div>
-          <div className='use-card'>
-            <h4>
-              Indicate the type of vehicle you own for tailored service reccomendation.
-            </h4>
-          </div>
-          <div className='use-card'>
-            <h4>
-              Alert nearby garages about your Emergencies or book services from the displayed options
-            </h4>
-          </div>
-          <div className='use-card'>
-            <h4>
-              Contact the garages directly or allow them to reach out.
-            </h4>
+          <div className='use-img'>
+            <img src={use} alt="use" />
           </div>
         </div>
       </div>

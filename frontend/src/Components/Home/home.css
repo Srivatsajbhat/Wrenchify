@@ -103,13 +103,14 @@
 .card_container {
     color: var(--clr-primary-black);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
 }
 
 .card_container .card {
     border-radius: 20px;
     background: var(--clr-primary-white);
-    box-shadow: 8px 0 30px 40px rgba(4, 4, 4, 0.10);
+    box-shadow: 2px 5px 5px 5px rgba(4, 4, 4, 0.10);
     max-width: 90%;
     width: 90%;
     margin-inline: auto;
@@ -137,41 +138,19 @@
     line-height: 1.6;
 }
 
+.serv-img img{
+    width: 90%;
+    height: 97%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
 .use-head {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
     color: white;
-}
-
-.use-container {
-    color: var(--clr-primary-black);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
-}
-
-.use-container .use-card {
-    border-radius: 20px;
-    background-color: white;
-    max-width: 90%;
-    width: 90%;
-    margin-inline: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 3rem 3rem 3rem 3rem;
-    width: 44%;
-    margin-bottom: 7rem;
-}
-
-.use-container .use-card h4 {
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 400;
 }
 
 .uses {
@@ -185,13 +164,14 @@
     width: 100vw;
 }
 
-.use-card:hover {
-    box-shadow: 8px 0 30px 40px rgba(4, 4, 4, 0.10);
-    transform: translateY(-8px) scale(0.99);
-    transition: transform 1s;
+.use-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
 }
 
 
+/* 
 @media (max-width: 1500px) {
     .card_container {
         grid-template-columns: 1fr;
@@ -208,7 +188,7 @@
     .sub-container {
         grid-template-columns: 1fr;
     }
-}
+} */
 
 .about {
     padding-block: 3rem 5rem;
@@ -254,3 +234,30 @@
     justify-content: center;
     margin: 80px;
 }
+
+.use-list ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.use-list ul li {
+    display: block; /* Ensure list items are displayed as block elements */
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+}
+
+.use-list {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.use-img {
+   display: flex;
+    justify-content: center;
+}
+
+
+

@@ -6,12 +6,12 @@ import { FaUserCircle } from "react-icons/fa";
 function Header() {
   return (
     <div className='body'>
-    <div class="wrapper">
+    <div className="wrapper">
       <nav className='header-nav'>
-        <a href="/" class="logo">WrenchiFy</a>
+        <a href="/" className="logo">WrenchiFy</a>
         <input type="checkbox" name="" id="toggle"/>
-        <label for="toggle"><i class="material-icons"><RiMenu4Fill /></i></label>
-        <div class="menu">
+        <label for="toggle"><i className="material-icons"><RiMenu4Fill /></i></label>
+        <div className="menu">
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
