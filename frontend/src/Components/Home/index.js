@@ -175,12 +175,12 @@ function Home() {
         <div className='use-container container'>
           <div className='use-list'>
           <ul>
-                <li><h3>1. Initiate your garage search by clicking on the Explore Button.</h3></li>
-                <li><h3>2. Specify the type the type of service you require : Emergency or Regular Maintainence.</h3></li>
-                <li><h3>3. Input your location and preffered radius to find nearby service providers.</h3></li>
-                <li><h3>4. Indicate the type of vehicle you own for tailored service reccomendation.</h3></li>
-                <li><h3>5. Alert nearby garages about your Emergencies or book services from the displayed options.</h3></li>
-                <li><h3>6. Contact the garages directly or allow them to reach out.</h3></li>
+                <li><h3>1.  Initiate your garage search by clicking on the Explore Button.</h3></li>
+                <li><h3>2.  Specify the type the type of service you require : Emergency or Regular Maintainence.</h3></li>
+                <li><h3>3.  Input your location and preffered radius to find nearby service providers.</h3></li>
+                <li><h3>4.  Indicate the type of vehicle you own for tailored service reccomendation.</h3></li>
+                <li><h3>5.  Alert nearby garages about your Emergencies or book services from the displayed options.</h3></li>
+                <li><h3>6.  Contact the garages directly or allow them to reach out.</h3></li>
 
           </ul>
           </div>
