@@ -3,9 +3,12 @@ const router = express.Router();
 const User = require('../model/User');
 const argon2 = require('argon2');
 const { body, validationResult } = require('express-validator');
-
+const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser')
+  
 // Route for user registration
-router.post('/register', [
+router.post('/register', [ 
+    
     // Validate input fields
     body('name').notEmpty().withMessage('Name is required'),
     body('email').isEmail().withMessage('Valid email is required'),
@@ -15,9 +18,10 @@ router.post('/register', [
         if (value !== req.body.password) {
             throw new Error('Passwords do not match');
         }
-        return true;
+        return true; 
     })
 ], async (req, res) => {
+    // console.log(req.body);
     try {
         // Check for validation errors
         const errors = validationResult(req);
@@ -25,30 +29,36 @@ router.post('/register', [
             return res.status(400).json({ errors: errors.array() });
         }
 
-        const { name, email, mobile, password } = req.body;
-
+        const { name, email, mobile, password, confirmPassword } = req.body;
+        // console.log(req.body);
+        // console.log(email); 
+        // console.log(User); 
         const existingUser = await User.findOne({ email });
+        // console.log(existingUser);
         if (existingUser) {
             return res.status(400).json({ message: "User with this email already exists" });
         }
 
         const hash = await argon2.hash(password);
-
+ 
         const newUser = new User({
             name,
             email,
             mobile,
-            password: hash
+            password: hash,
+            confirmPassword
         });
 
-        await newUser.save();
+        userSaved = await newUser.save();
+        const token = createToken(userSaved._id);
+        res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge * 1000});
 
-        res.status(201).json({ message: "User registered successfully" });
+        res.status(201).json({ message: "User registered successfully", user: userSaved._id });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Internal server error" });
     }
-});
+}); 
 
 // Route for user login
 router.post('/login', [
@@ -69,7 +79,7 @@ router.post('/login', [
 
         if (!user) {
             return res.status(404).json({ message: "User not found" });
-        }
+        } 
 
         if (await argon2.verify(user.password, password)) {
             return res.status(200).json({ message: "Login successful" });
@@ -81,4 +91,12 @@ router.post('/login', [
     }
 });
 
+const maxAge = 3 * 24 * 60 * 60;
+const createToken = (id) => {
+    return jwt.sign({ id }, 'Gagan is the secret', {
+        expiresIn: maxAge
+    })
+}
+
 module.exports = router;
+ 
