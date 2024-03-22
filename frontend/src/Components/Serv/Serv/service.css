@@ -1,0 +1,380 @@
+/* service.css */
+.App {
+  text-align: center;
+}
+
+.services-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*  */.left-container {
+  width: 48%;
+  height: 280px;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 20px;
+  background: linear-gradient(to bottom right, #2c387e,#3f51b5);
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition */
+  transform: translateY(0); /* Initial translation */
+}
+
+.left-container:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.left-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff; 
+}
+
+.paragraph {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #fff; 
+}
+
+.guarantee-icons {
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.guarantee-icon {
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Add transition */
+}
+
+.guarantee-icon:hover {
+  background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.guarantee-icon p {
+  margin-top: 10px;
+  color: #fff; 
+}
+
+
+
+
+/*  */.right-container {
+  width: 48%;
+  text-align: center;
+  margin-right: 20px;
+  background-color: #fff; 
+  padding: 20px;
+
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+
+.right-container h1 {
+  margin-bottom: 20px;
+  color: #2c387e; 
+  transition: color 0.3s ease;
+}
+
+
+
+.slideshow-container {
+  position: relative;
+  /* width: 450px;
+  max-width: 100%;
+  height: 280px; */
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  height: auto; 
+  max-height: 280px; 
+}
+
+.turn {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: none;
+  width: 100%;
+
+  /* height: 100%;
+  position: absolute; */
+  /* top: 0;
+  left: 0; */
+}
+
+.turn.active {
+  opacity: 1;
+  display: block;
+}
+
+.turn img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.slide-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slide-indicator input {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slide-indicator input:checked {
+  background-color: #333;
+}
+
+/* Add more styles as needed */
+.service-offer {
+  margin-top: 80px;
+  text-align: center;
+}
+.service-offer h2 {
+  font-size: 28px;
+  color: #2c387e; 
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+
+.service-icons {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-row {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-item p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.service-item svg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  color: #3f51b5; 
+}
+/*  */
+.additional-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.additional-service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 20px);
+  max-width: 300px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.additional-service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e0e0e0; 
+}
+
+.circle-icon {
+  background-color: #3f51b5; /* Blue circle background color */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle-icon svg {
+  color: #fff; 
+  font-size: 2.5rem;
+}
+
+.description {
+  text-align: center;
+}
+
+.description p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.additional-service-item:hover .description p {
+  color: #3f51b5; 
+  font-weight: bold; 
+}
+.additional-services-header {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 32px;
+  color: #202958; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+
+/*  */
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box; /* Include padding in the width */
+  }
+  .left-container {
+    width: 100%;
+    margin: 0 30px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+
+  .guarantee-icons {
+  
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .guarantee-icon {
+    margin: 10px 0;
+  }
+
+  .service-icons .service-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 80%;
+    margin: 10px 0; 
+  }
+
+  .additional-services {
+    margin-top: 20px;
+  }
+
+  .additional-service-item {
+    width: 100%;
+    margin: 0 0 20px 0; 
+  }
+
+  .paragraph {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .service-offer h2 {
+    font-size: 24px; 
+  }
+
+  .paragraph {
+    font-size: 14px; 
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 270px) {
+  /* Adjustments for smaller devices */
+  .slideshow-container {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .service-offer h2 {
+    font-size: 24px;
+  }
+
+  .service-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .left-container {
+    padding: 10px;
+  }
+
+  .right-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Add these styles to fix the overlapping issue */
+  .service-row {
+    flex-direction: row; /* Change direction to row */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+
+  .service-item {
+    width: calc(50% - 20px); /* Two items per row with margin */
+    margin: 10px; /* Margin between items */
+  }
+  
+}
